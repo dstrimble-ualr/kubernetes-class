@@ -1,0 +1,36 @@
+# Week 14: Capstone Proposal Checklist
+# Guide for students submitting capstone proposals
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: capstone-proposal-checklist
+data:
+  checklist: |
+    # Capstone Proposal Checklist
+    
+    ## Architecture
+    - [ ] System diagram with all components labeled
+    - [ ] Data flow diagram showing request paths
+    - [ ] Technology choices justified (why Kubernetes? why not?)
+    
+    ## Kubernetes Requirements
+    - [ ] At least 3 different Kubernetes workload types
+    - [ ] Persistent storage usage explained
+    - [ ] Health probes configured (liveness, readiness)
+    - [ ] Resource requests/limits defined
+    - [ ] Ingress or service exposure strategy
+    
+    ## Deployment
+    - [ ] YAML manifests in version control
+    - [ ] Deployment procedure documented
+    - [ ] Rollback strategy identified
+    
+    ## Observability
+    - [ ] Metrics to observe identified
+    - [ ] Logging strategy defined
+    - [ ] Alert thresholds proposed
+    
+    ## Timeline
+    - [ ] Milestone breakdown for remaining 1 week
+    - [ ] Risk register with mitigation

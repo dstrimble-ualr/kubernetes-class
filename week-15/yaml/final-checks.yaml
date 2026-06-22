@@ -1,10 +1,46 @@
+# Week 15: Final Capstone - Deployment Checklist
+
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: final-demo-checks
-  namespace: cpsc-cloud-native
+  name: capstone-final-checks
 data:
-  health: verified
-  ingress: verified
-  storage: verified
-  monitoring: verified
+  deployment-checklist: |
+    # Final Capstone Deployment Checklist
+    
+    ## Code & Build
+    - [ ] All source code in Git repository
+    - [ ] Dockerfile builds without errors
+    - [ ] Container image pushed to registry
+    - [ ] Multi-stage build optimized
+    
+    ## Kubernetes Manifests
+    - [ ] All YAML files validated with kubectl --dry-run
+    - [ ] No hardcoded secrets (using Secrets objects)
+    - [ ] Resource requests/limits set for all containers
+    - [ ] Health probes configured and tested
+    - [ ] Ingress configured with TLS if exposed
+    
+    ## Deployment
+    - [ ] Successfully deployed to GKE cluster
+    - [ ] All services running and healthy
+    - [ ] Traffic flowing through services
+    - [ ] Persistent volumes mounted and accessible
+    
+    ## Observability
+    - [ ] Metrics visible in monitoring stack
+    - [ ] Logs queryable from container stdout
+    - [ ] At least one custom metric
+    - [ ] Dashboard created in Grafana
+    
+    ## Security
+    - [ ] No privileged containers
+    - [ ] Read-only filesystem where possible
+    - [ ] Network policies restricting traffic
+    - [ ] Service accounts with minimal permissions
+    
+    ## Testing
+    - [ ] Load test completed
+    - [ ] Graceful shutdown tested
+    - [ ] Failure recovery validated
+    - [ ] Documentation complete
