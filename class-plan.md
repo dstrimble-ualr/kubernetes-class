@@ -18,7 +18,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: create the course namespace and map IAM roles to Kubernetes RBAC.
 - Checkpoint: students can deploy to the cluster and explain the difference between cloud IAM and cluster RBAC.
 - Homework: verify cluster access and submit the baseline RBAC manifest.
-- Slides: [week-01/slides/week-01-slides.md](week-01/slides/week-01-slides.md)
+- Plan: [week-01/plan/week-01-plan.md](week-01/plan/week-01-plan.md)
 - YAML: [week-01/yaml/baseline-rbac.yaml](week-01/yaml/baseline-rbac.yaml)
 
 ### Week 2: Deployments and Self-Healing
@@ -28,7 +28,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: deploy two application versions and simulate pod disruption.
 - Checkpoint: students can trigger a rollout and recover from a bad release.
 - Homework: zero-downtime lab write-up and deployment YAML review.
-- Slides: [week-02/slides/week-02-slides.md](week-02/slides/week-02-slides.md)
+- Plan: [week-02/plan/week-02-plan.md](week-02/plan/week-02-plan.md)
 - YAML: [week-02/yaml/deployment-rollout.yaml](week-02/yaml/deployment-rollout.yaml)
 
 ### Week 3: Health and Lifecycles
@@ -38,7 +38,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: add probe configuration and graceful termination handling.
 - Checkpoint: students can explain why readiness is not the same as liveness.
 - Homework: resilient YAML suite submission.
-- Slides: [week-03/slides/week-03-slides.md](week-03/slides/week-03-slides.md)
+- Plan: [week-03/plan/week-03-plan.md](week-03/plan/week-03-plan.md)
 - YAML: [week-03/yaml/probes.yaml](week-03/yaml/probes.yaml)
 
 ### Week 4: Services and Networking
@@ -48,7 +48,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: route traffic between frontend and backend services.
 - Checkpoint: students can trace service-to-service traffic inside the cluster.
 - Homework: service connectivity map.
-- Slides: [week-04/slides/week-04-slides.md](week-04/slides/week-04-slides.md)
+- Plan: [week-04/plan/week-04-plan.md](week-04/plan/week-04-plan.md)
 - YAML: [week-04/yaml/service.yaml](week-04/yaml/service.yaml)
 
 ### Week 5: Ingress and Traffic Control
@@ -58,7 +58,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: configure host-based and path-based routing.
 - Checkpoint: students can explain how ingress differs from a service.
 - Homework: exposed HTTPS endpoint.
-- Slides: [week-05/slides/week-05-slides.md](week-05/slides/week-05-slides.md)
+- Plan: [week-05/plan/week-05-plan.md](week-05/plan/week-05-plan.md)
 - YAML: [week-05/yaml/ingress.yaml](week-05/yaml/ingress.yaml)
 
 ### Week 6: Config and Secrets
@@ -68,7 +68,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: externalize environment-specific settings and sensitive values.
 - Checkpoint: students can update config without rebuilding the image.
 - Homework: externalized config lab.
-- Slides: [week-06/slides/week-06-slides.md](week-06/slides/week-06-slides.md)
+- Plan: [week-06/plan/week-06-plan.md](week-06/plan/week-06-plan.md)
 - YAML: [week-06/yaml/config-and-secret.yaml](week-06/yaml/config-and-secret.yaml)
 
 ### Week 7: Persistent Volumes
@@ -78,7 +78,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: mount a GCE Persistent Disk into a workload.
 - Checkpoint: students can describe what survives pod replacement and what does not.
 - Homework: persistent storage mount exercise.
-- Slides: [week-07/slides/week-07-slides.md](week-07/slides/week-07-slides.md)
+- Plan: [week-07/plan/week-07-plan.md](week-07/plan/week-07-plan.md)
 - YAML: [week-07/yaml/pvc.yaml](week-07/yaml/pvc.yaml)
 
 ### Week 8: StatefulSets
@@ -88,7 +88,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: deploy a small PostgreSQL cluster or equivalent stateful service.
 - Checkpoint: students can explain why StatefulSets exist instead of Deployments for this use case.
 - Homework: distributed DB cluster submission.
-- Slides: [week-08/slides/week-08-slides.md](week-08/slides/week-08-slides.md)
+- Plan: [week-08/plan/week-08-plan.md](week-08/plan/week-08-plan.md)
 - YAML: [week-08/yaml/statefulset.yaml](week-08/yaml/statefulset.yaml)
 
 ### Week 9: Resource Scheduling
@@ -98,7 +98,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: intentionally tune resources too low and too high, then correct them.
 - Checkpoint: students can justify resource settings from observed behavior.
 - Homework: resource profiling report.
-- Slides: [week-09/slides/week-09-slides.md](week-09/slides/week-09-slides.md)
+- Plan: [week-09/plan/week-09-plan.md](week-09/plan/week-09-plan.md)
 - YAML: [week-09/yaml/resources.yaml](week-09/yaml/resources.yaml)
 
 ### Week 10: Autoscaling
@@ -108,7 +108,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: generate load and watch horizontal scaling behavior.
 - Checkpoint: students can connect load changes to replica count changes.
 - Homework: scaling benchmark.
-- Slides: [week-10/slides/week-10-slides.md](week-10/slides/week-10-slides.md)
+- Plan: [week-10/plan/week-10-plan.md](week-10/plan/week-10-plan.md)
 - YAML: [week-10/yaml/hpa.yaml](week-10/yaml/hpa.yaml)
 
 ### Week 11: Cluster Scaling
@@ -118,7 +118,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: simulate scheduling exhaustion and trigger new node creation.
 - Checkpoint: students can distinguish pod scaling from cluster scaling.
 - Homework: node scaling demo notes.
-- Slides: [week-11/slides/week-11-slides.md](week-11/slides/week-11-slides.md)
+- Plan: [week-11/plan/week-11-plan.md](week-11/plan/week-11-plan.md)
 - YAML: [week-11/yaml/scheduling-pressure.yaml](week-11/yaml/scheduling-pressure.yaml)
 
 ### Week 12: Kubernetes Security Hardening
@@ -128,7 +128,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: restrict workload communication and remove unnecessary permissions.
 - Checkpoint: students can identify at least one security control at each layer.
 - Homework: hardened security baseline.
-- Slides: [week-12/slides/week-12-slides.md](week-12/slides/week-12-slides.md)
+- Plan: [week-12/plan/week-12-plan.md](week-12/plan/week-12-plan.md)
 - YAML: [week-12/yaml/security-baseline.yaml](week-12/yaml/security-baseline.yaml)
 
 ### Week 13: Self-Hosted Monitoring
@@ -138,7 +138,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: install Prometheus and Grafana with Helm and confirm metrics flow.
 - Checkpoint: students can query a metric and interpret a dashboard panel.
 - Homework: running monitoring stack screenshot or export.
-- Slides: [week-13/slides/week-13-slides.md](week-13/slides/week-13-slides.md)
+- Plan: [week-13/plan/week-13-plan.md](week-13/plan/week-13-plan.md)
 - YAML: [week-13/yaml/monitoring-stack.yaml](week-13/yaml/monitoring-stack.yaml)
 
 ### Week 14: Flex Week and Capstone Proposal Checkpoint
@@ -148,7 +148,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: apply fixes to the weakest part of each project plan.
 - Checkpoint: proposal is realistic, testable, and aligned with the semester goals.
 - Homework: final proposal plus risk register.
-- Slides: [week-14/slides/week-14-slides.md](week-14/slides/week-14-slides.md)
+- Plan: [week-14/plan/week-14-plan.md](week-14/plan/week-14-plan.md)
 - YAML: [week-14/yaml/proposal-checklist.yaml](week-14/yaml/proposal-checklist.yaml)
 
 ### Week 15: Final Capstone
@@ -158,7 +158,7 @@ This is a first-pass teaching plan based on the syllabus. It assumes one primary
 - Lab: performance tuning and last-mile debugging.
 - Checkpoint: application is containerized, stateful, observable, and deployed to GKE.
 - Homework: final submission and presentation materials.
-- Slides: [week-15/slides/week-15-slides.md](week-15/slides/week-15-slides.md)
+- Plan: [week-15/plan/week-15-plan.md](week-15/plan/week-15-plan.md)
 - YAML: [week-15/yaml/final-checks.yaml](week-15/yaml/final-checks.yaml)
 
 ## What To Build Next
