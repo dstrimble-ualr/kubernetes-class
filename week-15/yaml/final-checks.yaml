@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: final-demo-checks
+  namespace: cpsc-cloud-native
+data:
+  health: verified
+  ingress: verified
+  storage: verified
+  monitoring: verified

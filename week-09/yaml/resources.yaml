@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tuned-app
+  namespace: cpsc-cloud-native
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: tuned-app
+  template:
+    metadata:
+      labels:
+        app: tuned-app
+    spec:
+      containers:
+      - name: app
+        image: ghcr.io/example/tuned-app:v1
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 256Mi

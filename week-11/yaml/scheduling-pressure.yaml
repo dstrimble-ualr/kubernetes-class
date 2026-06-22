@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pressure-app
+  namespace: cpsc-cloud-native
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: pressure-app
+  template:
+    metadata:
+      labels:
+        app: pressure-app
+    spec:
+      containers:
+      - name: app
+        image: ghcr.io/example/pressure-app:v1
+        resources:
+          requests:
+            cpu: 500m
+            memory: 512Mi
+          limits:
+            cpu: 1000m
+            memory: 1Gi
