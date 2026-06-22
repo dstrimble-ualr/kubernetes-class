@@ -1,7 +1,5 @@
 # Class Planning Draft for CPSC 5xxx: Advanced Cloud Native Orchestration
 
-This is a first-pass teaching plan based on the syllabus. It assumes one primary class meeting per week with a lecture/lab format.
-
 ## Planning Principles
 
 - Each week should start with a short recap of the previous lab and any common issues.
