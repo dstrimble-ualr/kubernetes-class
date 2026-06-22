@@ -9,6 +9,15 @@
 
 ## Week-by-Week Plan
 
+### Week 0: Cloud Fundamentals
+
+- Goal: Understand cloud computing, deployment models, and why Kubernetes exists.
+- In class: discuss bare metal vs. VMs vs. containers, cloud service models, and container orchestration challenges.
+- Lab: conceptual exercises comparing deployment approaches.
+- Checkpoint: students can explain the differences between bare metal, VMs, and containers, and why Kubernetes is needed.
+- Homework: reflection on cloud concepts and readiness for Week 1.
+- Plan: [week-00/plan/week-00-plan.md](week-00/plan/week-00-plan.md)
+
 ### Week 1: GKE Foundations and Access Control
 
 - Goal: Get every student authenticated, connected, and working in a baseline GKE cluster.
